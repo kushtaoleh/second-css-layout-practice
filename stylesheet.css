@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.topbar{
+    background-color: black;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topbar-inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 73px;
+}
+.logo-wrapper svg{
+    width: 126px;
+}
+.logo-wrapper{
+    
+}

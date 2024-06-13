@@ -3,6 +3,13 @@
 body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
 }
 .topbar{
     font-size: 24px;
@@ -72,10 +79,56 @@ body{
 }
 #sign_in{
     background: #4C5FD5;
-    transition: background 0.5s,
-    color 0.5s;
+    transition: background 0.3s,
+    color 0.3s;
 }
 #sign_in:hover{
     color: black;
     background: white
+}
+
+.hero-unit{
+    background: #dadbf1;
+    padding: 80px 30px 115px;
+}
+.container-inner{
+    margin: auto;
+    max-width: 720px;
+    position: relative;
+}
+.container-inner h1{
+    text-align: center;
+    width: 720px;
+    font-weight: 500;
+    font-size: 65px;
+    margin: 0 0 16px;
+}
+.search-help input:focus{
+    outline: none;
+}
+.search-help input{
+    padding: 1rem 1rem;
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    border-radius: 4px;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid black;
+    transition: border 0.3s;
+}
+
+.arrow-svg {
+    position: absolute;
+    right: 10px;
+    top: 123px;
+    pointer-events: none;
+    z-index: 100;
+    transition: fill 0.3s;
+}
+
+.search-help:hover .arrow-svg {
+    fill: #4C5FD5; /* Change to desired hover color */   
+}
+.search-help input:hover{
+    border: 1px solid #4C5FD5;
 }

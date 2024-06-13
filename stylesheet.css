@@ -21,9 +21,33 @@ body{
 }
 .logo-wrapper svg{
     width: 126px;
+    height: 30px;
 }
 .logo-wrapper{
-    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-wrapper a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    height: 30px;
+}
+.logo{
+    transition: opacity 0.2s;
+}
+.logo:hover{
+    opacity: 0.9;
+}
+.help-center:hover{
+    text-decoration: underline;
+}
+.topbar-merger{
+    color: white;
+    user-select: none;
+    font-size: 30px;
+}
 .buttons-wrapper button{
     all:unset;
     font-size: 24px;

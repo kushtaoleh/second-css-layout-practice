@@ -15,6 +15,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 .topbar {
+    /* width: 100%; */
     font-size: 24px;
     background-color: black;
     min-height: 88px;
@@ -173,7 +174,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 .hero-unit {
-    flex: 1 1 320px;
+    flex: 1 1 0;
     background: #dadbf1;
     padding: 80px 30px 115px;
 }
@@ -191,7 +192,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .container-inner h1 {
     text-align: center;
-    width: 720px;
+    max-width: 720px;
     font-weight: 500;
     font-size: 65px;
     margin: 0 0 16px;
@@ -422,8 +423,13 @@ footer {
 
 }
 
-@media (max-width: 768px) {
-    .footer-container{
-        margin-bottom: 200px;
+@media (max-width: 661px) {
+    .arrow-svg {
+        position: absolute;
+        right: 10px;
+        top: 220px;
+        pointer-events: none;
+        z-index: 100;
+        transition: fill 0.3s;
     }
 }
